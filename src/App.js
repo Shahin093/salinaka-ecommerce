@@ -1,13 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Banner from './components/Banner/Banner';
+import { Route, Routes } from 'react-router-dom';
+import Features from './components/Features/Features';
+import HomePage from './components/HomePage/HomePage';
 
 function App() {
   return (
-    <div className="">
+    <div className="bg-base-200">
+
       <Navbar></Navbar>
-      <Banner></Banner>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/features" element={<Features />} />
+      </Routes>
     </div>
   );
 }

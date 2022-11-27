@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -9,26 +10,30 @@ const Navbar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-success rounded-box w-52">
-                        <li><a>Home</a></li>
+                        <Link to={'/'}>Home</Link>
+                        <li> <Link to={'/shop'}>Home</Link></li>
+                        <Link to={'/'}>Home</Link>
 
-                        <li><a>Shop</a></li>
+                        {/* <li><a>Shop</a></li>
                         <li><a>Featured</a></li>
-                        <li><a>Recommandred</a></li>
+                        <li><a>Recommandred</a></li> */}
                     </ul>
                 </div>
                 {/* <a class="btn btn-ghost normal-case text-xl">daisyUI</a> */}
-                <img className='w-50' src="https://salinaka-ecommerce.web.app/images/logo-full.059e10fa5fedbfb65165e7565ed3936f.png" alt="" />
+                <Link to={'/'}>
+
+                    <img className='w-50' src="https://salinaka-ecommerce.web.app/images/logo-full.059e10fa5fedbfb65165e7565ed3936f.png" alt="" />
+                </Link>
             </div>
 
 
 
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
-                    <li><a>Home</a></li>
-
-                    <li><a>Shop</a></li>
-                    <li><a>Featured</a></li>
-                    <li><a>Recommandred</a></li>
+                    <li> <Link to={'/'}>Home</Link></li>
+                    <li> <Link to={'/shop'}>Shop</Link></li>
+                    <li> <Link to={'/features'}>Features</Link></li>
+                    <li> <Link to={'/recommandred'}>Recommandred</Link></li>
                 </ul>
             </div>
             <div class="navbar-end">
