@@ -1,17 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Freatures.css'
-const Features = () => {
-    return (
 
-        <div className='bg-base-200 px-6 lg:px-16 my-14'>
+const Recomandred = () => {
+    return (
+        <div className='bg-base-200 px-6 lg:px-16 my-20'>
 
             <div className='bg-base-200 flex justify-between px-5 my-10'>
-                <h1 className='text-4xl font-bold'>Features Products</h1>
-                <Link to={'/features'} className='text-access bold underline lg:text-1xl'>See All</Link>
+                <h1 className='text-4xl font-bold'>Recomandred Products</h1>
+                <Link to={'/recomandred'} className='text-access bold underline lg:text-1xl'>See All</Link>
             </div>
 
-            <Link to={'/features3456'}>
+            <Link to={'/recomandred3456'}>
                 <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 bg-base-200 gap-5'>
 
                     <div class="card border">
@@ -19,7 +18,7 @@ const Features = () => {
                             <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7 " alt="Shoes" class="rounded-xl" />
                         </figure>
                         <hr />
-                        <div class="card-body bg-base-600">
+                        <div class="card-body bg-base">
                             <h2 class="text-xl font-extrabold">Burnikk</h2>
                             <p class="subtle italic">Sexbomb</p>
                         </div>
@@ -87,4 +86,4 @@ const Features = () => {
     );
 };
 
-export default Features;
+export default Recomandred;
